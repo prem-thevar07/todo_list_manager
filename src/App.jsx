@@ -101,7 +101,7 @@ function App() {
           <button onClick={handleAdd} disabled={todo.length <= 1} className='bg-violet-600 hover:bg-violet-800 disabled:bg-violet-700 text-white  p-3 py-1 block mx-3 rounded-md '>save</button>
         </div>
 
-        <div className=' show-finished text-white flex items-center m4  gap-3 rounded-md px-2 p-1 w-[140px] bg-'>
+        <div className=' show-finished text-white flex items-center m4 break-all gap-3 rounded-md px-2 p-1 w-[150px] bg-'>
           <input onChange={toggleFinished} type="checkbox" checked={showfinished} />
           <span className='align-middle break-all' >Show finished</span>
         </div>
