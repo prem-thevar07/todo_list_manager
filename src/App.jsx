@@ -118,7 +118,7 @@ function App() {
               return (showfinished || !item.isCompleted) && <div key={item.id} className="todo flex justify-between my-3 
                 ">
                 <div className='flex gap-5 break-all'>
-                  <input name={item.id} onChange={handleCheckbox} type="checkbox" value={item.isCompleted} id="" />
+                  <input name={item.id} onChange={handleCheckbox} type="checkbox" checked={item.isCompleted} id="" />
 
                   <div className={item.isCompleted ? "line-through" : ""}>{item.todo}</div>
                 </div>
